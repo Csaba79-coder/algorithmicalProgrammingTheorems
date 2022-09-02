@@ -43,5 +43,7 @@ public class DataLoader {
         System.out.println("The min is: " + min);
         int max = new MinAndMax().findMax(numbers);
         System.out.println("The max is: " + max);
+
+        new Intersection().section(numbers, nums);
     }
 }
