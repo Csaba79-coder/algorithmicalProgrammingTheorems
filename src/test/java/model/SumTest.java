@@ -10,6 +10,6 @@ class SumTest {
     @Test
     void sum() {
         int expected = 6;
-        assertEquals(expected, new Sum().sum(DataLoader.numsToSum));
+        assertEquals(expected, new Sum().sum(DataLoader.nums));
     }
 }
