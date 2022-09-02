@@ -45,5 +45,6 @@ public class DataLoader {
         System.out.println("The max is: " + max);
 
         new Intersection().section(numbers, nums);
+        new Union().createUnion(numbers, nums);
     }
 }
