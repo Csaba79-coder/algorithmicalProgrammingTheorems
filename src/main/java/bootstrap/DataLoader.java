@@ -1,9 +1,6 @@
 package bootstrap;
 
-import model.Count;
-import model.Decision;
-import model.Selection;
-import model.Sum;
+import model.*;
 
 public class DataLoader {
 
@@ -28,5 +25,10 @@ public class DataLoader {
         int notFoundElement = new Selection().select(nums, numNotFound);
         System.out.println("Element (if found): " + element);
         System.out.println("Element (if not found): " + notFoundElement);
+
+        boolean founded = new Searching().search(nums, numForFound);
+        boolean notFounded = new Searching().search(nums, numNotFound);
+        System.out.println("Found in array: " + founded);
+        System.out.println("Found in array: " + notFounded);
     }
 }
