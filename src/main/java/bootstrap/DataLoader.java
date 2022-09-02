@@ -2,11 +2,14 @@ package bootstrap;
 
 import model.*;
 
+import java.util.Arrays;
+
 public class DataLoader {
 
     public static int[] nums = new int[]{1, 2, 3};
     public static int numForFound = 2;
     public static int numNotFound = 16;
+    public static int[] numbers = new int[]{1, 3, 5, 6, 43, 8};
 
 
     public void runAppWithTestData() {
@@ -30,5 +33,8 @@ public class DataLoader {
         boolean notFounded = new Searching().search(nums, numNotFound);
         System.out.println("Found in array: " + founded);
         System.out.println("Found in array: " + notFounded);
+
+        Object[] assortedNums = new Assortment().assort(numbers, numNotFound);
+        System.out.println(Arrays.toString(assortedNums));
     }
 }
