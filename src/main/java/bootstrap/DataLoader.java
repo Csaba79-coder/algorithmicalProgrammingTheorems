@@ -36,5 +36,7 @@ public class DataLoader {
 
         Object[] assortedNums = new Assortment().assort(numbers, numNotFound);
         System.out.println(Arrays.toString(assortedNums));
+
+        new SortedBy().sortedBy(numbers, 5);
     }
 }
