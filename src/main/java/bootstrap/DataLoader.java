@@ -2,6 +2,7 @@ package bootstrap;
 
 import model.Count;
 import model.Decision;
+import model.Selection;
 import model.Sum;
 
 public class DataLoader {
@@ -22,5 +23,10 @@ public class DataLoader {
         boolean notFound = new Decision().decide(nums, numNotFound);
         System.out.println("Found: " + found);
         System.out.println("Found: " + notFound + " --> not found!");
+
+        int element = new Selection().select(nums, numForFound);
+        int notFoundElement = new Selection().select(nums, numNotFound);
+        System.out.println("Element (if found): " + element);
+        System.out.println("Element (if not found): " + notFoundElement);
     }
 }
