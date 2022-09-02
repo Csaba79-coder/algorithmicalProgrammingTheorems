@@ -38,5 +38,10 @@ public class DataLoader {
         System.out.println(Arrays.toString(assortedNums));
 
         new SortedBy().sortedBy(numbers, 5);
+
+        int min = new MinAndMax().findMin(numbers);
+        System.out.println("The min is: " + min);
+        int max = new MinAndMax().findMax(numbers);
+        System.out.println("The max is: " + max);
     }
 }
